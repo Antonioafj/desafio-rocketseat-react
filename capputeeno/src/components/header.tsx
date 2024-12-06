@@ -10,7 +10,13 @@ const TagHeader = styled.header`
     justify-content: space-between;
     paddind: 20px 160px;
 `
+const Logo = styled.a `
+    color: var(--logo-color);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
 
+`
 
 export function Header(props : HeaderProps){
     return(
