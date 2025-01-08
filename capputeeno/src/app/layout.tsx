@@ -1,3 +1,4 @@
+import { Header } from "@/components/header";
 import "./globals.css";
 import {Saira} from "next/font/google";
 
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={saira.className}>{children}</body>
+      <body className={saira.className}>
+      <Header/>
+      {children}
+      </body>
     </html>
   );
 }

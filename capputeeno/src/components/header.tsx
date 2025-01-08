@@ -1,4 +1,15 @@
+"use client"
+
 import styled from "styled-components"
+import {Saira_Stencil_One} from "next/font/google";
+import { PrimaryInputWSearchIcon } from "./primary-input";
+
+
+const sairaStencil = Saira_Stencil_One({
+  weight:[ '400'],
+  subsets:['latin'] 
+})
+
 
 interface HeaderProps {
 
@@ -21,8 +32,10 @@ const Logo = styled.a `
 export function Header(props : HeaderProps){
     return(
         <TagHeader>
-            <div></div>
-            <div></div>
+            <Logo className={sairaStencil.className}>Capputeeno</Logo>
+            <div>
+                <PrimaryInputWSearchIcon placeholder="Procurando por algo específico?" />
+            </div>
         </TagHeader>
     )
 }
